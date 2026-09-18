@@ -46,6 +46,7 @@ output, a test suite, and CI that builds it on a clean machine.
 | Project | What it does |
 | --- | --- |
 | [bank-ledger-csharp](https://github.com/umer-78/bank-ledger-csharp) | Append-only account ledger in C#/.NET 8. Money is `decimal`, entries are never edited, and `audit` replays every entry to prove the balance still agrees. |
+| [kv-store](https://github.com/umer-78/kv-store) | A log-structured key-value store in Go — write-ahead log, SSTables, bloom filters and compaction. Reading an absent key is 50× faster than a present one, and a crash mid-write loses only what was never acknowledged. |
 | [loadgun](https://github.com/umer-78/loadgun) | HTTP load testing in Go — worker pool, rate cap, nearest-rank percentiles and a latency histogram, exiting non-zero so it works as a CI gate. |
 | [url-shortener-go](https://github.com/umer-78/url-shortener-go) | URL shortener in Go: JSON API, custom codes, expiring links, atomic visit counting, single static binary, distroless image. |
 | [inventory-management-system](https://github.com/umer-78/inventory-management-system) | Stock control on a movement-ledger design — stock on hand is derived, never a field that can drift. Suppliers, purchase orders, valuation, reorder alerts. |
