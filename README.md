@@ -36,6 +36,7 @@ output, a test suite, and CI that builds it on a clean machine.
 
 | Project | What it does |
 | --- | --- |
+| [text-search](https://github.com/umer-78/text-search) | A search engine built from the index up in pure Python — positions, BM25, phrase and boolean queries, the Porter stemmer and typo tolerance. Uses the clamped idf because the textbook BM25 form measures −1.4351 on a term in 10 of 12 documents, penalising a document for containing the query. |
 | [mini-sql-engine](https://github.com/umer-78/mini-sql-engine) | A SQL engine written from scratch — tokenizer, recursive-descent parser and executor — running joins, grouping and aggregates over CSV files, with three-valued NULL logic and errors that point at the offending character. |
 | [timeseries-forecasting](https://github.com/umer-78/timeseries-forecasting) | Baselines, exponential smoothing and rolling-origin backtesting with no dependencies. MASE is scaled by the training window, and a test proves no fold ever sees data past its own origin. |
 | [sales-insights](https://github.com/umer-78/sales-insights) | pandas analysis with an audit trail — every row dropped in cleaning is counted and explained. Cohort retention, RFM segmentation, seasonality. |
