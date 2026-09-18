@@ -47,7 +47,7 @@ output, a test suite, and CI that builds it on a clean machine.
 | [project-tracker](https://github.com/umer-78/project-tracker) | Team project management: kanban with drag and drop, sprints, burndown, workload and role-based permissions. |
 | [task-board](https://github.com/umer-78/task-board) · [demo](https://umer-78.github.io/task-board/) | Kanban in React and TypeScript where every drag has a keyboard equivalent. |
 | [weather-now](https://github.com/umer-78/weather-now) · [demo](https://umer-78.github.io/weather-now/) | Weather dashboard on the keyless Open-Meteo API. The hourly strip starts at the current hour, not at midnight. |
-| [coinvantage](https://github.com/umer-78/coinvantage) | Installable crypto markets site — live prices, charts, signals and an on-device forecast. No API keys, no trading, no wallet access. |
+| [coinvantage](https://github.com/umer-78/coinvantage) · [demo](https://umer-78.github.io/coinvantage/) | Installable crypto markets site — live prices, charts, signals and an on-device forecast. No API keys, no trading, no wallet access. |
 
 ## Games & interactive
 
