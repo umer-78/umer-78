@@ -36,6 +36,7 @@ output, a test suite, and CI that builds it on a clean machine.
 
 | Project | What it does |
 | --- | --- |
+| [route-planner](https://github.com/umer-78/route-planner) | Shortest and fastest routes over a 1,600-intersection network — Dijkstra, A* and bidirectional search sharing one implementation. The heuristic's admissibility is tested against the real network, and inflating it by 1.2 turns out to expand *more* nodes than not inflating it at all. |
 | [text-search](https://github.com/umer-78/text-search) | A search engine built from the index up in pure Python — positions, BM25, phrase and boolean queries, the Porter stemmer and typo tolerance. Uses the clamped idf because the textbook BM25 form measures −1.4351 on a term in 10 of 12 documents, penalising a document for containing the query. |
 | [mini-sql-engine](https://github.com/umer-78/mini-sql-engine) | A SQL engine written from scratch — tokenizer, recursive-descent parser and executor — running joins, grouping and aggregates over CSV files, with three-valued NULL logic and errors that point at the offending character. |
 | [timeseries-forecasting](https://github.com/umer-78/timeseries-forecasting) | Baselines, exponential smoothing and rolling-origin backtesting with no dependencies. MASE is scaled by the training window, and a test proves no fold ever sees data past its own origin. |
@@ -46,6 +47,8 @@ output, a test suite, and CI that builds it on a clean machine.
 
 | Project | What it does |
 | --- | --- |
+| [diffkit](https://github.com/umer-78/diffkit) | Diff, patch and three-way merge in Go with no dependencies. Its unified output is checked against GNU diff rather than only against its own parser, and it measures what the textbook LCS table costs: 158× the time and 59× the memory of Myers for the same eleven edits. |
+| [pebble-lang](https://github.com/umer-78/pebble-lang) | A small programming language built end to end in Python — lexer, Pratt parser, static scope resolver and tree-walking interpreter, with closures and a REPL. Running the same program with `--no-resolve` reproduces the closure late-binding bug the resolver removes, so the difference is a measurement rather than a claim. |
 | [bank-ledger-csharp](https://github.com/umer-78/bank-ledger-csharp) | Append-only account ledger in C#/.NET 8. Money is `decimal`, entries are never edited, and `audit` replays every entry to prove the balance still agrees. |
 | [kv-store](https://github.com/umer-78/kv-store) | A log-structured key-value store in Go — write-ahead log, SSTables, bloom filters and compaction. Reading an absent key is 50× faster than a present one, and a crash mid-write loses only what was never acknowledged. |
 | [loadgun](https://github.com/umer-78/loadgun) | HTTP load testing in Go — worker pool, rate cap, nearest-rank percentiles and a latency histogram, exiting non-zero so it works as a CI gate. |
