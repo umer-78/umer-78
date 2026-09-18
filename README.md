@@ -22,6 +22,10 @@ output, a test suite, and CI that builds it on a clean machine.
 
 | Project | What it does |
 | --- | --- |
+| [gradient-boosting](https://github.com/umer-78/gradient-boosting) | Gradient boosting written from scratch — histogram trees, Newton leaf values, early stopping. Every gradient is checked against finite differences, and it shows gain importance ranking a planted noise column above a real predictor while permutation importance scores it zero. |
+| [recommender-engine](https://github.com/umer-78/recommender-engine) | Popularity and random baselines, item-item CF, matrix factorisation and BPR on a temporal split. Demonstrates that rating-trained factorisation ranks worse than random, and the same model on a pairwise loss is 13× better. |
+| [anomaly-detection](https://github.com/umer-78/anomaly-detection) | Statistical detectors and an isolation forest for metrics, with a random detector shipped in the box to show how far point-adjusted F1 flatters a detector — pure noise scores 0.46 on it against a real 0.08. |
+| [image-toolkit](https://github.com/umer-78/image-toolkit) | Image processing from scratch in NumPy: convolution kept distinct from correlation, a separable Gaussian 11× faster and identical to 1e-13, Otsu thresholding and Canny-style edges. |
 | [neural-network-from-scratch](https://github.com/umer-78/neural-network-from-scratch) | Feed-forward network in pure NumPy. Every hand-derived gradient is checked against a numerical estimate — the test fails if the calculus is wrong. |
 | [rag-document-qa](https://github.com/umer-78/rag-document-qa) | Question answering over your own documents: structure-aware chunking, BM25 + TF-IDF hybrid retrieval, cited answers, no API key. |
 | [sentiment-analyzer](https://github.com/umer-78/sentiment-analyzer) | Naive Bayes written from scratch and scored beside scikit-learn's on the same data, with negation handling and per-prediction explanations. |
@@ -33,6 +37,7 @@ output, a test suite, and CI that builds it on a clean machine.
 | Project | What it does |
 | --- | --- |
 | [mini-sql-engine](https://github.com/umer-78/mini-sql-engine) | A SQL engine written from scratch — tokenizer, recursive-descent parser and executor — running joins, grouping and aggregates over CSV files, with three-valued NULL logic and errors that point at the offending character. |
+| [timeseries-forecasting](https://github.com/umer-78/timeseries-forecasting) | Baselines, exponential smoothing and rolling-origin backtesting with no dependencies. MASE is scaled by the training window, and a test proves no fold ever sees data past its own origin. |
 | [sales-insights](https://github.com/umer-78/sales-insights) | pandas analysis with an audit trail — every row dropped in cleaning is counted and explained. Cohort retention, RFM segmentation, seasonality. |
 | [ta-indicators](https://github.com/umer-78/ta-indicators) | Dependency-free technical indicators in strict TypeScript, checked against published worked examples. |
 
