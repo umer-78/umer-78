@@ -16,6 +16,7 @@ output, a test suite, and CI that builds it on a clean machine.
 | [log-sentinel](https://github.com/umer-78/log-sentinel) | Finds SSH brute-force, password spraying and success-after-failure logins in Linux auth logs. |
 | [file-integrity-monitor](https://github.com/umer-78/file-integrity-monitor) | SHA-256 baselines with HMAC signing, so a tampered *baseline* is caught too. Watch mode included. |
 | [security-headers-scanner](https://github.com/umer-78/security-headers-scanner) | Grades a site's HTTP security headers and cookies A–F, with the exact header line that fixes each finding. |
+| [regex-engine](https://github.com/umer-78/regex-engine) | A regex engine with four engines over one pattern, so catastrophic backtracking can be measured. On `(a+)+b` the backtracking matcher takes exactly 2^(n+4) steps where the automaton takes 30n — and Python's own `re`, a backtracking engine, takes 25 seconds at n=28. |
 | [subnet-calculator](https://github.com/umer-78/subnet-calculator) · [demo](https://umer-78.github.io/subnet-calculator/) | IPv4 subnetting, equal split and VLSM in the browser. The maths module has no DOM in it, so it is unit tested. |
 
 ## Machine learning & AI
