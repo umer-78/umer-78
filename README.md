@@ -1,7 +1,7 @@
 # Umer Hashmi
 
-Software engineer. I build security tooling, machine learning projects and
-applications — and I finish them: every repository below has a README with real
+Software engineer. I like building security tooling, machine learning projects and
+applications —  every repository below has a README with real
 output, a test suite, and CI that builds it on a clean machine.
 
 **Portfolio: [umer-78.github.io](https://umer-78.github.io/)**
