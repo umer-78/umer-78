@@ -56,7 +56,8 @@ suite, and CI that builds it on a clean machine.
 | [url-shortener-go](https://github.com/umer-78/url-shortener-go) · [demo](https://umer-78.github.io/url-shortener-go/) | URL shortener in Go: JSON API, custom codes, expiring links, atomic visit counting, single static binary, distroless image. |
 | [inventory-management-system](https://github.com/umer-78/inventory-management-system) · [demo](https://umer-78.github.io/inventory-management-system/) | Stock control on a movement-ledger design: stock on hand is derived, never a field that can drift. Suppliers, purchase orders, valuation, reorder alerts. |
 | [project-tracker](https://github.com/umer-78/project-tracker) · [demo](https://umer-78.github.io/project-tracker/) | Team project management: kanban with drag and drop, sprints, burndown, workload and role-based permissions. |
-| [task-board](https://github.com/umer-78/task-board) · [demo](https://umer-78.github.io/task-board/) | Kanban in React and TypeScript where every drag has a keyboard equivalent. |
+| [task-board](https://github.com/umer-78/task-board) · [demo](https://umer-78.github.io/task-board/) | Kanban in React and TypeScript where every drag has a keyboard equivalent, and cards animate with Motion. |
+| [ui-lab](https://github.com/umer-78/ui-lab) · [demo](https://umer-78.github.io/ui-lab/) | Six animation patterns for React with Motion — shared layout, enter/exit, drag, springs, height auto, scroll progress — each one file, each with a keyboard route and reduced-motion support. |
 | [weather-now](https://github.com/umer-78/weather-now) · [demo](https://umer-78.github.io/weather-now/) | Weather dashboard on the keyless Open-Meteo API. The hourly strip starts at the current hour, not at midnight. |
 | [coinvantage](https://github.com/umer-78/coinvantage) · [demo](https://umer-78.github.io/coinvantage/) | Installable crypto markets site: live prices, charts, signals, calculators and an on-device forecast that reports its measured accuracy. No API keys, never trades, and wallet connection is read-only. |
 
@@ -81,11 +82,12 @@ suite, and CI that builds it on a clean machine.
 
 ## Tools
 
-**Languages** Python · JavaScript · TypeScript · C# · Go · SQL
-**ML & data** NumPy · pandas · scikit-learn · Matplotlib
-**Web** FastAPI · React · Vite · Node
-**Data stores** SQLite · PostgreSQL
-**Other** Docker · GitHub Actions · Unity · pytest · xUnit · Vitest
+**Languages** Python · JavaScript · TypeScript · C# · Go · SQL\
+**ML & data** NumPy · pandas · scikit-learn · Matplotlib\
+**Web** FastAPI · React · Vite · Node · Tailwind CSS · Motion (Framer Motion)\
+**Data stores** SQLite · PostgreSQL\
+**Other** Docker · GitHub Actions · Unity · pytest · xUnit · Vitest\
+**AI tooling** 21st.dev MCP · UI UX Pro Max
 
 ## Reach me
 
