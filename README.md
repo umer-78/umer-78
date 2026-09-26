@@ -30,7 +30,7 @@ suite, and CI that builds it on a clean machine.
 | [neural-network-from-scratch](https://github.com/umer-78/neural-network-from-scratch) · [demo](https://umer-78.github.io/neural-network-from-scratch/) | Feed-forward network in pure NumPy. Every hand-derived gradient is checked against a numerical estimate — the test fails if the calculus is wrong. |
 | [rag-document-qa](https://github.com/umer-78/rag-document-qa) · [demo](https://umer-78.github.io/rag-document-qa/) | Question answering over your own documents: structure-aware chunking, BM25 + TF-IDF hybrid retrieval, cited answers, no API key. |
 | [sentiment-analyzer](https://github.com/umer-78/sentiment-analyzer) · [demo](https://umer-78.github.io/sentiment-analyzer/) | Naive Bayes written from scratch and scored beside scikit-learn's on the same data, with negation handling and per-prediction explanations. |
-| [customer-churn-prediction](https://github.com/umer-78/customer-churn-prediction) · [demo](https://umer-78.github.io/customer-churn-prediction/) | Four models compared honestly against a baseline, with the decision threshold chosen from the cost of a false negative rather than from accuracy. |
+| [customer-churn-prediction](https://github.com/umer-78/customer-churn-prediction) · [demo](https://umer-78.github.io/customer-churn-prediction/) | Three models and a majority-class baseline compared on one split, with PR-AUC as the headline metric because missing a churner is the costly error, plus a model card and a scoring CLI. |
 | [ml-model-serving-api](https://github.com/umer-78/ml-model-serving-api) · [demo](https://umer-78.github.io/ml-model-serving-api/) | FastAPI service for a scikit-learn model: validation, model versioning, rollback, health and metrics endpoints. |
 
 ## Data & analytics
@@ -65,7 +65,7 @@ suite, and CI that builds it on a clean machine.
 
 | Project | What it does |
 | --- | --- |
-| [GD_PROJECT](https://github.com/umer-78/GD_PROJECT) · [demo](https://umer-78.github.io/GD_PROJECT/) | Unity 3D maze game: recursive-backtracker levels carved at runtime, enemies that check line of sight before firing, collectibles and traps. |
+| [GD_PROJECT](https://github.com/umer-78/GD_PROJECT) · [demo](https://umer-78.github.io/GD_PROJECT/) | Unity 3D maze game: five hand-built levels, NavMesh guards that check line of sight before firing, moving obstacles that damage the player, and coins that unlock the exit door. Playable in the browser. |
 | [snake-game](https://github.com/umer-78/snake-game) · [demo](https://umer-78.github.io/snake-game/) | Snake on a canvas with the rules separated from the rendering and unit tested: queued turns mean two fast key presses can't fold the snake into itself. |
 
 ---
