@@ -1,7 +1,7 @@
 # Umer Hashmi
 
-Software engineer. I build security tools, machine learning projects and
-applications. Every repository below has a README with real output, a test
+Software engineer. I build security tools, machine learning and LLM systems,
+and applications. Every repository below has a README with real output, a test
 suite, and CI that builds it on a clean machine.
 
 **Portfolio: [umer-78.github.io](https://umer-78.github.io/)**
@@ -23,7 +23,6 @@ suite, and CI that builds it on a clean machine.
 
 | Project | What it does |
 | --- | --- |
-| [llm-gateway](https://github.com/umer-78/umer-78-llm-gateway) | Self-healing gateway in front of several LLM providers: circuit breakers kept in Redis, failover by request class, hedged requests and a queue that waits out outages, with cost per tenant and feature. Answered 92.2% of interactive requests through scripted outages, against 74.4% when calling one provider directly. |
 | [gradient-boosting](https://github.com/umer-78/gradient-boosting) · [demo](https://umer-78.github.io/gradient-boosting/) | Gradient boosting written from scratch: histogram trees, Newton leaf values, early stopping. Every gradient is checked against finite differences, and it shows gain importance ranking a planted noise column above a real predictor while permutation importance scores it zero. |
 | [recommender-engine](https://github.com/umer-78/recommender-engine) · [demo](https://umer-78.github.io/recommender-engine/) | Popularity and random baselines, item-item CF, matrix factorisation and BPR on a temporal split. Demonstrates that rating-trained factorisation ranks worse than random, and the same model trained with a pairwise loss ranks 13× better. |
 | [anomaly-detection](https://github.com/umer-78/anomaly-detection) · [demo](https://umer-78.github.io/anomaly-detection/) | Statistical detectors and an isolation forest for metrics, with a random detector shipped in the box to show how far point-adjusted F1 flatters a detector — pure noise reaches 0.46 on it, beating the isolation forest's honest 0.42. |
@@ -33,6 +32,31 @@ suite, and CI that builds it on a clean machine.
 | [sentiment-analyzer](https://github.com/umer-78/sentiment-analyzer) · [demo](https://umer-78.github.io/sentiment-analyzer/) | Naive Bayes written from scratch and scored beside scikit-learn's on the same data, with negation handling and per-prediction explanations. |
 | [customer-churn-prediction](https://github.com/umer-78/customer-churn-prediction) · [demo](https://umer-78.github.io/customer-churn-prediction/) | Three models and a majority-class baseline compared on one split, with PR-AUC as the headline metric because missing a churner is the costly error, plus a model card and a scoring CLI. |
 | [ml-model-serving-api](https://github.com/umer-78/ml-model-serving-api) · [demo](https://umer-78.github.io/ml-model-serving-api/) | FastAPI service for a scikit-learn model: validation, model versioning, rollback, health and metrics endpoints. |
+
+## LLM engineering
+
+| Project | What it does |
+| --- | --- |
+| [llm-gateway](https://github.com/umer-78/umer-78-llm-gateway) | Self-healing gateway in front of several LLM providers: circuit breakers kept in Redis, failover by request class, hedged requests and a queue that waits out outages, with cost per tenant and feature. Answered 92.2% of interactive requests through scripted outages, against 74.4% when calling one provider directly. |
+| [groundtruth](https://github.com/umer-78/groundtruth) · [demo](https://umer-78.github.io/groundtruth/) | Retrieval evaluation for a legal research assistant: 100 questions over 510 real contracts with lawyer-labelled passages. The configuration it recommends finds the passage in the top 10 for 70.0% of questions, against 36.8% for plain BM25, and CI fails any change that costs a point. |
+| [doorman](https://github.com/umer-78/doorman) · [demo](https://umer-78.github.io/doorman/) | Prompt-injection defences for an AI recruiting agent, measured against 60 red-team attacks and 303 injections written by others. Isolating what the agent reads from what it may do stopped every one, with no benign application flagged. |
+| [warmstart](https://github.com/umer-78/warmstart) · [demo](https://umer-78.github.io/warmstart/) | Semantic cache for an LLM support assistant. Replayed on 10,000 real support questions it answered 29.4% from the cache with 4 wrong answers and no cross-customer leaks, cutting the cost per 1,000 questions from $6.72 to $2.61. |
+| [llm-cost-autopilot](https://github.com/umer-78/llm-cost-autopilot) | Routes each LLM request to the cheapest model likely to get it right. On 4,551 questions with every model's answers recorded by HELM, it matched GPT-4o's accuracy at 23% of the cost. |
+| [llm-regression-detector](https://github.com/umer-78/llm-regression-detector) | Finds the tasks a model upgrade breaks, with McNemar's test per task and Holm's correction as a CI gate. Llama 3 → 3.1 70B moved 0.7 points overall while legal questions fell from 69.2% to 58.3%. |
+| [ai-feature-flags](https://github.com/umer-78/ai-feature-flags) | Staged rollouts of a new model or prompt that roll back on their own. It rolled back the three clearly worse upgrades in 100 of 100 replays; with an identical candidate it wrongly rolled back 3.8% of rollouts, against 45.9% for re-running an ordinary test. |
+| [prompt-ab-platform](https://github.com/umer-78/prompt-ab-platform) | A/B/n testing for prompts: versioned templates, Thompson sampling and always-valid elimination. On HELM's recorded prompt variants, the prompt format alone moved accuracy by up to 63.8 points. |
+| [llm-arbitration](https://github.com/umer-78/llm-arbitration) | A panel of critics checks each LLM answer, and an adjudicator weighs them by their record into a calibrated verdict. It caught 57% of Llama 3.1 70B's wrong answers where a majority vote caught 43%. |
+| [judge-calibration](https://github.com/umer-78/judge-calibration) | GPT-4 as a judge against two pools of human raters on 1,399 outputs. It agrees with each pool about as well as they agree with each other, and favours its own model family by 0.38 points on completeness. |
+| [distill](https://github.com/umer-78/distill) | Distils GPT-3.5's labels into a model that runs on a CPU: 94.9% against the teacher's 95.3% on held-out reviews, and cheaper to own above 16,865 requests a month. |
+| [text-to-sql-guardrails](https://github.com/umer-78/text-to-sql-guardrails) | A parsing guard and a database-enforced sandbox between LLM-written SQL and the database. Together they stopped 40 of 40 attacks while all 20 ordinary queries ran, and wrongly blocked none of 322 Spider gold queries. |
+| [pipeline-forensics](https://github.com/umer-78/pipeline-forensics) | Traces AI pipelines step by step and blames the step a bad answer came from. It shows that Gemini 1.5 Flash 002's 46-point maths "regression" is mostly a stop sequence added between benchmark releases. |
+| [self-healing-docs](https://github.com/umer-78/self-healing-docs) | A GitHub Action that fails pull requests whose API changes leave the docs wrong, and patches renames. Replayed over httpx's history: 33 doc sections went stale, for a median of 52 days. |
+| [eval-dataset-generator](https://github.com/umer-78/eval-dataset-generator) | Turns production logs into an evaluation set: redaction, clustering, and sampling that captured 1.7× the failures per labelled case while its quality estimate stayed unbiased. |
+| [casefile](https://github.com/umer-78/casefile) | Bounded multi-agent claims triage: typed handoffs, snapshots, cost ceilings enforced in code and a human gate on payouts. Across 900 synthetic claims every run stopped and none crossed its ceiling. |
+| [graph-rag](https://github.com/umer-78/graph-rag) | Knowledge-graph and vector retrieval over the same chunks, with a router. On hop questions over the top 500 PyPI packages, vector search found 38.3% of what was needed and routed retrieval 99.7%. |
+| [research-agents](https://github.com/umer-78/research-agents) | Multi-agent research with durable state, budgets and cited findings. It answered 94% of sub-questions with 15% of tool calls failing, and every run killed mid-way resumed to the same report. |
+| [slotfill](https://github.com/umer-78/slotfill) | Strict-schema extraction from scanned receipts. A small trained extractor validates 98.5% of the time against 83.5% for rules, gets totals right 94% of the time and runs in under 4 ms on a CPU. |
+| [fieldnote](https://github.com/umer-78/fieldnote) | Answers read off page images and cited with a crop of where they came from. The right receipt comes first for 87.5% of questions whose answer exists only in the image. |
 
 ## Data & analytics
 
@@ -66,7 +90,7 @@ suite, and CI that builds it on a clean machine.
 
 | Project | What it does |
 | --- | --- |
-| [GD_PROJECT](https://github.com/umer-78/GD_PROJECT) · [demo](https://umer-78.github.io/GD_PROJECT/) | Unity 3D maze game: five hand-built levels, NavMesh guards that check line of sight before firing, moving obstacles that damage the player, and coins that unlock the exit door. Playable in the browser. |
+| [GD_PROJECT](https://github.com/umer-78/GD_PROJECT) · [play](https://umer-78.github.io/GD_PROJECT/play/) | Treasure Hunt, a 3D maze game: five temple levels, sentries whose line of sight is drawn on the floor, telegraphed traps, and a camera that never ends up inside a wall. Built in Unity with C#, and ported to three.js so it plays in the browser. |
 | [snake-game](https://github.com/umer-78/snake-game) · [demo](https://umer-78.github.io/snake-game/) | Snake on a canvas with the rules separated from the rendering and unit tested: queued turns mean two fast key presses can't fold the snake into itself. |
 
 ---
@@ -85,8 +109,9 @@ suite, and CI that builds it on a clean machine.
 
 **Languages** Python · JavaScript · TypeScript · C# · Go · SQL\
 **ML & data** NumPy · pandas · scikit-learn · Matplotlib\
+**LLM systems** ONNX Runtime · sentence embeddings · sqlglot · RapidOCR · Prometheus · Grafana\
 **Web** FastAPI · React · Vite · Node · Tailwind CSS · Motion (Framer Motion)\
-**Data stores** SQLite · PostgreSQL\
+**Data stores** SQLite · PostgreSQL · Redis\
 **Other** Docker · GitHub Actions · Unity · pytest · xUnit · Vitest\
 **AI tooling** 21st.dev MCP · UI UX Pro Max
 
