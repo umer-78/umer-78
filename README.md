@@ -68,7 +68,7 @@ suite, and CI that builds it on a clean machine.
 | [timeseries-forecasting](https://github.com/umer-78/timeseries-forecasting) · [demo](https://umer-78.github.io/timeseries-forecasting/) | Baselines, exponential smoothing and rolling-origin backtesting with no dependencies. MASE is scaled by the training window, and a test proves no fold ever sees data past its own origin. |
 | [sales-insights](https://github.com/umer-78/sales-insights) · [demo](https://umer-78.github.io/sales-insights/) | pandas analysis with an audit trail: every row dropped in cleaning is counted and explained. Cohort retention, RFM segmentation, seasonality. |
 | [ta-indicators](https://github.com/umer-78/ta-indicators) · [demo](https://umer-78.github.io/ta-indicators/) | Dependency-free technical indicators in strict TypeScript, checked against published worked examples. |
-| [stocksense](https://github.com/umer-78/stocksense) | Inventory forecasting for Shopify, a replacement for the retired Stocky: days-to-stockout and reorder quantities per variant, with the arithmetic shown behind every number. Remix + Shopify App Bridge, 90 tests over the forecasting, billing and import logic. |
+| [stocksense](https://github.com/umer-78/stocksense) · [site](https://umer-78.github.io/stocksense/) | Inventory forecasting for Shopify, a replacement for the retired Stocky: days-to-stockout and reorder quantities per variant, with the arithmetic shown behind every number. Remix + Shopify App Bridge, 90 tests over the forecasting, billing and import logic. |
 
 ## Applications & services
 
