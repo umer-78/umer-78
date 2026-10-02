@@ -31,6 +31,7 @@ suite, and CI that builds it on a clean machine.
 | [rag-document-qa](https://github.com/umer-78/rag-document-qa) · [demo](https://umer-78.github.io/rag-document-qa/) | Question answering over your own documents: structure-aware chunking, BM25 + TF-IDF hybrid retrieval, cited answers, no API key. |
 | [sentiment-analyzer](https://github.com/umer-78/sentiment-analyzer) · [demo](https://umer-78.github.io/sentiment-analyzer/) | Naive Bayes written from scratch and scored beside scikit-learn's on the same data, with negation handling and per-prediction explanations. |
 | [customer-churn-prediction](https://github.com/umer-78/customer-churn-prediction) · [demo](https://umer-78.github.io/customer-churn-prediction/) | Three models and a majority-class baseline compared on one split, with PR-AUC as the headline metric because missing a churner is the costly error, plus a model card and a scoring CLI. |
+| [customer-segmentation-clustering](https://github.com/umer-78/customer-segmentation-clustering) · [demo](https://umer-78.github.io/customer-segmentation-clustering/) | Unsupervised segmentation with Ward hierarchical clustering: the dendrogram cut into segments and the silhouette, Davies-Bouldin and Calinski-Harabasz scores recomputed live in the browser as you change k, matching scikit-learn. |
 | [ml-model-serving-api](https://github.com/umer-78/ml-model-serving-api) · [demo](https://umer-78.github.io/ml-model-serving-api/) | FastAPI service for a scikit-learn model: validation, model versioning, rollback, health and metrics endpoints. |
 
 ## LLM engineering
