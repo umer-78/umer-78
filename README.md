@@ -88,6 +88,8 @@ suite, and CI that builds it on a clean machine.
 | [ui-lab](https://github.com/umer-78/ui-lab) · [demo](https://umer-78.github.io/ui-lab/) | Six animation patterns for React with Motion — shared layout, enter/exit, drag, springs, height auto, scroll progress — each one file, each with a keyboard route and reduced-motion support. |
 | [weather-now](https://github.com/umer-78/weather-now) · [demo](https://umer-78.github.io/weather-now/) | Weather dashboard on the keyless Open-Meteo API. The hourly strip starts at the current hour, not at midnight. |
 | [coinvantage](https://github.com/umer-78/coinvantage) · [demo](https://umer-78.github.io/coinvantage/) | Installable crypto markets site: live prices, charts, signals, calculators and an on-device forecast that reports its measured accuracy. No API keys, never trades, and wallet connection is read-only. |
+| lexical-analyzer-flex · private | Phase one of a compiler: a Flex scanner for a small language with Urdu keywords (`agar`, `warna`, `jabtak`) that writes every token and every lexical error, with its line, to separate files. On the sample program it emits 146 tokens and catches all 5 planted errors. |
+| compiler-parser · private | A two-stage compiler front end for a small C-like language: a Flex scanner and a hand-written LL(1) predictive parser in C++, with left recursion removed from the expression grammar and panic-mode recovery, so one syntax error does not end the parse. |
 
 ## Games & interactive
 
@@ -95,6 +97,8 @@ suite, and CI that builds it on a clean machine.
 | --- | --- |
 | [GD_PROJECT](https://github.com/umer-78/GD_PROJECT) · [play](https://umer-78.github.io/GD_PROJECT/play/) | Treasure Hunt, a 3D maze game: five temple levels, sentries whose line of sight is drawn on the floor, telegraphed traps, and a camera that never ends up inside a wall. Built in Unity with C#, and ported to three.js so it plays in the browser. |
 | [snake-game](https://github.com/umer-78/snake-game) · [demo](https://umer-78.github.io/snake-game/) | Snake on a canvas with the rules separated from the rendering and unit tested: queued turns mean two fast key presses can't fold the snake into itself. |
+| arcanum-of-warrior · private | A fantasy action game in Unity: a menu and level select lead into five levels of melee and gunfire combat, with a flying companion that spots enemies and fights at your side. |
+| treasure-hunt · private | The first Unity prototype of Treasure Hunt: a third-person explorer that moves relative to the camera, built on Unity's Input System. The finished game is GD_PROJECT above. |
 
 ---
 
