@@ -5,7 +5,7 @@ and applications. Every public repository below has a README with real output, a
 test suite, and CI that builds it on a clean machine. Every live demo opens on an
 interactive 3D scene about its own project, drawn with three.js.
 
-**Portfolio: [umer-78.github.io](https://umer-78.github.io/)**
+**Portfolio: [umer-78.github.io](https://umer-78.github.io/)** · **Available for freelance work: [hire me on Upwork](https://www.upwork.com/freelancers/~01ddc1e59a4bd6f876)** · [AI video portfolio](https://umer-78.github.io/ai-video-portfolio/)
 
 ---
 
