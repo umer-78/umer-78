@@ -2,7 +2,8 @@
 
 Software engineer. I build security tools, machine learning and LLM systems,
 and applications. Every public repository below has a README with real output, a
-test suite, and CI that builds it on a clean machine.
+test suite, and CI that builds it on a clean machine. Every live demo opens on an
+interactive 3D scene about its own project, drawn with three.js.
 
 **Portfolio: [umer-78.github.io](https://umer-78.github.io/)**
 
@@ -76,6 +77,7 @@ test suite, and CI that builds it on a clean machine.
 | Project | What it does |
 | --- | --- |
 | [leadflow](https://github.com/umer-78/leadflow) · [site](https://umer-78.github.io/leadflow/) | LeadFlow AI: an autonomous lead-intake system for high-value service clinics. A 24/7 AI receptionist bounded by each clinic's verified guidelines (never invents pricing, refuses diagnoses), explainable HIGH/MEDIUM/LOW intent scoring, and follow-up that halts the moment a lead replies or books. Express + Gemini, React/Vite dashboard, multi-tenant. |
+| [adforge-studio](https://github.com/umer-78/adforge-studio) · [site](https://adforge-studio-sage.vercel.app) | AdForge Studio: upload, store, edit and publish ad videos and images in one place, with AI generation and editing tools. Next.js and TypeScript in a pnpm monorepo, deployed on Vercel. |
 | [diffkit](https://github.com/umer-78/diffkit) · [demo](https://umer-78.github.io/diffkit/) | Diff, patch and three-way merge in Go with no dependencies. Its unified output is checked against GNU diff rather than only round-tripped through its own parser, and it measures what the textbook LCS table costs: 158× the time and 59× the memory of Myers' algorithm for the same eleven edits. |
 | [pebble-lang](https://github.com/umer-78/pebble-lang) · [demo](https://umer-78.github.io/pebble-lang/) | A small programming language built end to end in Python: lexer, Pratt parser, static scope resolver and tree-walking interpreter, with closures and a REPL. Running the same program with `--no-resolve` reproduces the closure late-binding bug the resolver removes, so the difference is a measurement rather than a claim. |
 | [bank-ledger-csharp](https://github.com/umer-78/bank-ledger-csharp) · [demo](https://umer-78.github.io/bank-ledger-csharp/) | Append-only account ledger in C#/.NET 8. Money is `decimal`, entries are never edited, and `audit` replays every entry from zero to prove each balance still agrees with its entries. |
@@ -117,7 +119,7 @@ test suite, and CI that builds it on a clean machine.
 **Languages** Python · JavaScript · TypeScript · C# · Go · C · C++ · SQL\
 **ML & data** NumPy · pandas · scikit-learn · Matplotlib\
 **LLM systems** ONNX Runtime · sentence embeddings · sqlglot · RapidOCR · Prometheus · Grafana\
-**Web** FastAPI · React · Vite · Node · Tailwind CSS · Motion (Framer Motion)\
+**Web** FastAPI · React · Next.js · Vite · Node · Tailwind CSS · Motion (Framer Motion) · three.js · WebGL\
 **Data stores** SQLite · PostgreSQL · Redis\
 **Other** Docker · GitHub Actions · Unity · Flex · pytest · xUnit · Vitest\
 **AI tooling** 21st.dev MCP · UI UX Pro Max
